@@ -12,3 +12,4 @@ summary(mes2)
 fila1 <- Ventas[1,]
 View(fila1)
 summary(fila1)
+tiendas <- Ventas[0,5]
