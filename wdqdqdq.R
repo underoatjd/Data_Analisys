@@ -1,15 +1,7 @@
-View(Ventas)
-View(Vendedores)
-head(Ventas,3)
-tail(Ventas,3)
-summary(Ventas)
-resumenVentas <- summary(Ventas)
-View(resumenVentas)
-mes <- Ventas$Mes
-View(mes)
-mes2 <- Ventas[,1]
-summary(mes2)
-fila1 <- Ventas[1,]
-View(fila1)
-summary(fila1)
-tiendas <- Ventas[0,5]
+verventas = read_excel("Ventas.xlsx")
+vervendedores = read_csv("Vendedores.csv")
+
+#ejercicio 1 ver toda la liosta de tiendas
+verventas$Tienda
+# ejercicio 2
+verventas$Tienda[1:10]
